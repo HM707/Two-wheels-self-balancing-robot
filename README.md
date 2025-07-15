@@ -53,7 +53,7 @@ Le contrôleur PID est essentiel pour maintenir l’équilibre du robot. Les tro
 
 Dans le fichier `robot_balance.ino`, au début du code, vous trouverez :
 
-```cpp
+
 float Kp = 40;
 float Ki = 0.05;
 float Kd = 0.8;
