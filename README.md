@@ -59,6 +59,8 @@ float Kp = 40;
 float Ki = 0.05;
 
 float Kd = 0.8;
+
+
 ---
 
 Vous pouvez modifier ces valeurs, téléverser à nouveau le code et observer le comportement du robot.
@@ -76,17 +78,13 @@ Laisser Kd faible pour commencer
 
 L'ajustement se fait par essais successifs (méthode empirique)
 
+- Remarque : après la mise sous tension, il est nécessaire d'attendre environ **10 secondes** pour permettre la **calibration du gyroscope**. Ne pas toucher le robot pendant cette phase.
+
+
 ## Démonstration visuelle du robot
 ![Démonstration du robot](robot_demov.gif)
 
-## 👨‍💻 Membres de l’Équipe
 
-- mansour hamza
-- menai sami
-- menkh elhacen
-- labiod wasim
-
----
 
 ## 📬 Contact
 
