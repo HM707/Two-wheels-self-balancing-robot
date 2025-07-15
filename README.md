@@ -55,7 +55,9 @@ Dans le fichier `robot_balance.ino`, au début du code, vous trouverez :
 
 
 float Kp = 40;
+
 float Ki = 0.05;
+
 float Kd = 0.8;
 ---
 
