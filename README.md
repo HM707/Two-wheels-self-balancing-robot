@@ -1,58 +1,53 @@
-# 🤖 Robot Auto-Équilibré à Deux Roues
+# Robot auto-équilibré à deux roues
 
-> 🎓 Projet de fin d'études – Licence 3 en Automatique  
-> 👥 Réalisé par une équipe de 4 étudiants passionnés de robotique et systèmes embarqués
+Projet de fin d'études - Licence 3 en Automatique  
+Réalisé par une équipe de 4 étudiants.
 
-Ce projet a pour but de développer un robot capable de maintenir son équilibre sur deux roues en temps réel, en utilisant un capteur inertiel (MPU6050) et un algorithme de régulation PID. Le robot est contrôlé via une application Android grâce à une connexion Bluetooth.
+Ce projet consiste à concevoir un robot capable de se stabiliser sur deux roues en temps réel. L'équilibrage est réalisé à l'aide d'un capteur inertiel (MPU6050) et d’un algorithme PID implémenté sur une carte Arduino Nano. Le robot peut également être contrôlé via une application Android utilisant une connexion Bluetooth.
 
----
+## Objectifs du projet
 
-## 🎯 Objectifs du Projet
+- Réaliser un robot physique auto-équilibré
+- Lire l’inclinaison via un gyroscope et un accéléromètre (MPU6050)
+- Estimer l’angle à l’aide d’un filtre complémentaire
+- Implémenter une régulation PID temps réel
+- Piloter les moteurs à l’aide d’un pont en H (L298N)
+- Ajouter la possibilité de contrôle à distance via Bluetooth
 
-- Conception d’un robot auto-équilibré basé sur Arduino
-- Lecture des données d’orientation via MPU6050 (gyroscope + accéléromètre)
-- Fusion des données avec un **filtre complémentaire**
-- Implémentation d’un **contrôleur PID** pour stabilisation
-- Commande des moteurs en PWM via un module L298N
-- Communication Bluetooth via **HC-05** pour contrôle à distance
+## Composants utilisés
 
----
+- Arduino Nano
+- MPU6050 (accéléromètre + gyroscope)
+- Module L298N
+- Deux moteurs DC avec roues
+- Module Bluetooth HC-05
+- Batterie Li-Po
+- Châssis fabriqué à la main
 
-## ⚙️ Matériel Utilisé
+## Détails techniques
 
-| Composant              | Description                              |
-|------------------------|-------------------------------------------|
-| Arduino Nano           | Microcontrôleur principal                 |
-| MPU6050                | IMU : accéléromètre + gyroscope           |
-| L298N                  | Pont en H pour moteurs DC                 |
-| 2 moteurs DC + roues   | Mouvement et équilibre                    |
-| Module HC-05           | Contrôle Bluetooth via mobile             |
-| Batterie Li-Po         | Alimentation autonome                     |
-| Châssis fait main      | Support mécanique du robot                |
+- Langage de programmation : Arduino (C/C++)
+- Lecture des données en I2C
+- Fusion des données avec un filtre complémentaire
+- PID : Kp = 40, Ki = 0.05, Kd = 0.8
+- Arrêt automatique en cas de dépassement d’angle critique
+- Contrôle par smartphone via module Bluetooth
 
----
+## Aperçu
 
-## 🧠 Aspects Techniques
+![Photo du robot](media/photo.jpg)
 
-- **Langage** : Arduino C++  
-- **Bus I2C** pour lecture capteurs (MPU6050)  
-- **Filtrage** des signaux avec **filtre complémentaire**  
-- **Régulation PID** (Kp=40, Ki=0.05, Kd=0.8)  
-- **Protection** : arrêt automatique si inclinaison > 45°  
-- **Commande** : Application Android via Bluetooth
+## Vidéo de démonstration
 
----
+[Voir la vidéo](https://www.youtube.com/watch?v=LIEN_VIDÉO_ICI)
 
-## 📷 Aperçu du Projet
+## Structure du projet
 
-![Aperçu du robot](media/photo.jpg)
+- `robot_balance.ino` : code source Arduino
+- `README.md` : description du projet
+- `media/photo.jpg` : image du robot
+- `media/robot_demo.jpg` : miniature vidéo
 
----
+## Contact
 
-## 🎥 Vidéo de Démonstration
-
-[![Voir la démo vidéo](media/robot_demo.jpg)](https://www.youtube.com/watch?v=LIEN_VIDÉO_ICI)
-
----
-
-## 📂 Structure du Répertoire
+Pour toute question ou suggestion, n'hésitez pas à nous contacter via GitHub ou LinkedIn.
