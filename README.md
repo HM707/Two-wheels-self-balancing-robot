@@ -1,4 +1,4 @@
-no# 🤖 Robot Auto-Équilibré à Deux Roues
+# 🤖 Robot Auto-Équilibré à Deux Roues
 
 > 🎓 Projet de fin d'études – Licence 3 en Automatique  
 > 👥 Réalisé par une équipe de 4 étudiants passionnés de robotique et systèmes embarqués
@@ -74,7 +74,7 @@ Laisser Kd faible pour commencer
 
 L'ajustement se fait par essais successifs (méthode empirique)
 
-
+## Démonstration visuelle du robot
 ![Démonstration du robot](robot_demov.gif)
 
 ## 👨‍💻 Membres de l’Équipe
